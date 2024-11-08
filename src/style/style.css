@@ -1,0 +1,109 @@
+/*google fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*imports*/
+@import url('header.css');
+@import url('home.css');
+@import url('projects.css');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #f9feff;
+}
+
+section{
+    padding: 28px 8%;
+}
+
+a{
+    color: black;
+}
+
+span{
+    color: #5021ff;
+}
+
+.logo{
+    font-size: 28px;
+    color: #5021ff;  
+}
+
+.btn-primary{
+    border-color: #5021ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #5021ff;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 400;
+    /*box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);*/
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn-primary:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+.btn-secondary{
+    border-color: #5021ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn-secondary:hover{
+    border-color: #4500cc;
+    background-color: #5021ff;
+    color: #ffffff;
+}
+
+.btn-secondary a{
+    color: black;
+}
+
+.contact-buttons{
+    display: flex;
+    gap: 18px;
+}
+
+.contact-buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #ffffff;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #0f0e0e;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.contact-buttons a:hover{
+    transform: translateY(-15px);
+}

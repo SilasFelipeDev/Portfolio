@@ -1,0 +1,114 @@
+#home{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#cta{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 2%;
+}
+
+#cta .title{
+    font-size: 5rem;
+    position: relative;
+    bottom: -30px;
+}
+
+#cta .developer{
+    color: #5021ff;
+    position: relative;
+    top: -15px;
+}
+
+#cta .description{
+    text-align: right;
+    color: rgb(56, 55, 55);
+}
+
+#cta_buttons{
+    display: flex;
+    gap: 10%;
+    text-align: center;
+}
+
+#banner{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 57%;
+    z-index: 2;
+    position: relative;
+}
+
+#banner img{
+    border-radius: 0px 0px 210px 50px;
+    height: 90%;
+    width: fit-content;
+}
+
+.shape{
+    background-color: #5021ff;
+    position: absolute;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    width: 40%;
+    height: 75%;
+    border-radius: 50% 5% ;
+    right: 0;
+    z-index: 1;
+}
+
+#banner_mobile{
+    display: none;
+}
+
+.shape-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1170px){
+    #banner, #banner img, #home .shape{
+        display: none;
+    }
+    
+    #home{
+        min-height: 100%;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+    
+    #cta{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #cta .description{
+        text-align: center;
+    }
+    
+    #cta .developer{
+        top: 0;
+    }
+
+    /*#banner_mobile{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+    }
+    
+    #banner_mobile img{
+        position: relative;
+        border-radius: 0px 0px 25px 25px;
+        width: 50%;
+        height: auto;
+        z-index: 2;
+    }*/
+}
