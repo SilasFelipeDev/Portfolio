@@ -1,0 +1,31 @@
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*in-height: 10vh;*/
+    background-color: #ffffff;
+}
+
+#about .title{
+    font-size: 2.5rem;
+}
+
+#about p{
+    color: rgb(56, 55, 55);
+    text-align: center;
+}
+
+#skills{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
